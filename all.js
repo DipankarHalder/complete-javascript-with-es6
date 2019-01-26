@@ -2,7 +2,6 @@
     *****************************************************
     $  use strict concept
     ***************************************************** 
-
         -   The directive looks like a string: "use strict" or 'use strict'. When it is located 
             at the top of a script, the whole script works the “modern” way.
 
@@ -17,18 +16,16 @@
 
 
 
-
-
     *****************************************************
     $  Declearation & Defination
     ***************************************************** 
+        1.  Declearation  -  When ask the complier or interprater to create a new veriable and give it to a name.
+        2.  Defination    -  When you assign a value in the decleared veriable.
 
-    1.  Declearation  -  When ask the complier or interprater to create a new veriable and give it to a name.
-    2.  Defination    -  When you assign a value in the decleared veriable.
-
-    Example  -  
-        var a;                  // called Declearation
-        a = "Hello World !"     // called Defination
+        Example  -
+        ----------
+            var a;                  // called Declearation
+            a = "Hello World !"     // called Defination
 
 
 
@@ -64,12 +61,7 @@
 
 
 
-    *****************************************************
-    $  Object Concept
-    *****************************************************
     
-
-
 
 
     *****************************************************
