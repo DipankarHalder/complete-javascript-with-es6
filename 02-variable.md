@@ -8,18 +8,39 @@
 
 * ***Hoisting of var*** - Hoisting is a JavaScript mechanism where variables and function declarations are moved to the top of their scope before code execution. What this means is that if we do this :
     ```javascript
-    // Hoisting
-    console.log (sayhello);
     var sayhello = "say hello";
+    
+    function sayHello(){
+        // function scope
+        var sayhello = "Say hello in insight";
+        console.log(sayhello); // output - Say hello in insight
+    }
+
+    // global scope
+    console.log(sayhello); // Output - say hello;
+    sayHello();
     ```
 
 ---
 ### let :
 * A block is chunk of code bounded by { }. A block lives in curly braces. Anything within curly braces is a block. So a variable declared in a block with the let is only available for use within that block.
 
-* let can be ***updated but not re-declared*** Just like var, a variable declared with let can be ***updated within its scope***. Unlikevar, a let variable ***cannot be re-declared within its scope***.
+* let ***can be updated but not re-declared*** Just like var, a variable declared with let can be ***updated within its scope***. Unlikevar, a let variable ***cannot be re-declared within its scope***.
 
 * ***Hoisting of let*** - Just like var, let declarations are hoisted to the top. Unlike var which is initialized as undefined, the let keyword is not initialized. So if you try to use a let variable before declaration, you'll get a Reference Error.
+
+    ```javascript
+    let sayhello = "say hello";
+        sayhello = 30;              // can be updated
+    let sayhello = "Hello World";   // can't re-declared
+    
+    function sayHello(){
+        // block scope
+        let a = "Say hello";
+        console.log(a);
+    }
+    sayHello();  // output - Say hello
+    ```
 
 ---
 ### const :
@@ -31,8 +52,21 @@
 
     _[Note - This behavior is somehow different when it comes to objects declared with const. While a **const object cannot be updated, the properties of this objects can be updated.** ]_
 
+    ```javascript
+    // In simple variable
+    const sayhello = "say hello";
+          sayhello = 30;          // can't updated
+    const sayhello = "say hello"; // can't re-declared
+
+    // In object or array
+    const fruits = ["Banana", "Orange", "Apple", "Mango"];
+          fruits.push("Kiwi"); 
+    const changeObject = fruits;
+    console.log(changeObject);  // output - Banana, Orange, Apple, Mango, Kiwi
+    ```
+
 ---
-### In short var, let & const : 
+### In short of var, let & const : 
 var | let | const
 --- | --- | ---
 Globally or function scoped | Block scoped | Block scoped
