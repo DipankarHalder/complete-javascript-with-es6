@@ -1,76 +1,89 @@
-## Concept of var, let & const
----
+## Concept of Var, Let & Const
+
 
 ### var :
-* Scope essentially means where these variables are available for use. var declarations are ***globally scoped or function/locally scoped***. It is globally scoped when a var variable is declared outside a function. This means that any variable that is declared with var outside a function block is available for use in the whole window. var is ***function scoped*** when it is ***declared within a function***. This means that it is available and can be accessed only within that function.
+* Declarations are **global scoped** or **functionally scoped**.
+* It can be **redeclared** and **updated**.
+* Can be declared without being initialized
 
-* var can be ***re-declared and updated***, that means we can do this within the same scope and won't get an error.
-
-* ***Hoisting of var*** - Hoisting is a JavaScript mechanism where variables and function declarations are moved to the top of their scope before code execution. What this means is that if we do this :
     ```javascript
-    var sayhello = "say hello";
+    var sayhello = "Hello World";
+
     
-    function sayHello(){
+    function helloWorld(){
+        // 1. insight function it's work as a global scope,
+        console.log(sayhello);          // Output - Hello World;
+
+
+        // 2. overwrite the value of "sayhello" veriable because its redeclared
         // function scope
-        var sayhello = "Say hello in insight";
-        console.log(sayhello); // output - Say hello in insight
+        var sayhello = "Hello insight function";
+        console.log(sayhello);          // output - Hello insight function
     }
+
 
     // global scope
-    console.log(sayhello); // Output - say hello;
-    sayHello();
+    console.log(sayhello);              // Output - Hello World;
+    helloWorld();
     ```
 
----
+&nbsp;
+&nbsp;
+
 ### let :
-* A block is chunk of code bounded by { }. A block lives in curly braces. Anything within curly braces is a block. So a variable declared in a block with the let is only available for use within that block.
-
-* let ***can be updated but not re-declared*** Just like var, a variable declared with let can be ***updated within its scope***. Unlikevar, a let variable ***cannot be re-declared within its scope***.
-
-* ***Hoisting of let*** - Just like var, let declarations are hoisted to the top. Unlike var which is initialized as undefined, the let keyword is not initialized. So if you try to use a let variable before declaration, you'll get a Reference Error.
+* Declarations are **block scoped** ( only available for **use within curly braces { } block** ).
+* It can be **updated** or **reinitialized**, but **not redeclared**.
 
     ```javascript
-    let sayhello = "say hello";
-        sayhello = 30;              // can be updated
-    let sayhello = "Hello World";   // can't re-declared
+    let sayhello = "Hello World";
+        sayhello = 30;              // can updated or reinitialized
+        sayhello = true;            // can updated or reinitialized
     
-    function sayHello(){
+
+    // we can't redeclared the value of veriable when we using "let"
+    let sayhello = "Hello GitHub";
+
+    
+    function helloWorld(){
         // block scope
-        let a = "Say hello";
+        let a = "Hello JavaScript";
         console.log(a);
     }
-    sayHello();  // output - Say hello
+    console.log(a);     // output - undefined 
+    helloWorld();       // output - Hello JavaScript
     ```
 
----
+&nbsp;
+&nbsp;
+
 ### const :
-* const declarations are block scoped, Like let declarations, const declarations can only be accessed within the block it was declared.
-
-* const ***cannot be updated or re-declared*** This means that the value of a variable declared with ***const remains the same within its scope***. It cannot be ***updated or re-declared***. So if we declare a variable with const, we can neither do this.
-
-* ***Hoisting of const*** - Just like let, const declarations are hoisted to the top but are not initialized.
-
-    _[Note - This behavior is somehow different when it comes to objects declared with const. While a **const object cannot be updated, the properties of this objects can be updated.** ]_
+* Declarations are **block scoped**.
+* It cannot **updated** or **reinitialized** and **not redeclared**.
+* Note - This behavior is somehow different when it comes to objects declared with const. While a **const object cannot be updated, But the properties of this objects can be updated**.
 
     ```javascript
     // In simple variable
-    const sayhello = "say hello";
-          sayhello = 30;          // can't updated
-    const sayhello = "say hello"; // can't re-declared
+    const sayhello = "Hello JavaScript";
+
+
+    const sayhello = "Hello Github";        // can't re-declared
+          sayhello = 30;                    // can't updated or reinitialized
+    
 
     // In object or array
     const fruits = ["Banana", "Orange", "Apple", "Mango"];
           fruits.push("Kiwi"); 
     const changeObject = fruits;
-    console.log(changeObject);  // output - Banana, Orange, Apple, Mango, Kiwi
+    console.log(changeObject);              // output - Banana, Orange, Apple, Mango, Kiwi
     ```
 
----
+&nbsp;
+&nbsp;
+
 ### In short of var, let & const : 
 var | let | const
 --- | --- | ---
-Globally or function scoped | Block scoped | Block scoped
-updated and re-declared within its scope | Updated but not re-declared | Neither be updated nor re-declared
+Global or function scoped | Block scoped | Block scoped
+updated and re-declared within its scope | Updated/reinitialized, but not re-declared | Neither be updated/reinitialized nor re-declared
 Can be declared without being initialized | Can be declared without being initialized | Must be initialized during declaration
 In hoisting - variables are initialized with undefined | In hoisting - variables are not initialized | In hoisting - variables are not initialized
-
