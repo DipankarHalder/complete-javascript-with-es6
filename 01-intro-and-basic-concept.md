@@ -28,8 +28,8 @@
 
 ### 3. Declaration & Definition :
 
-- Declaration - &nbsp; When ask the interpreter to create a new variable and give it to a name.
-- Definition - &nbsp; When you assign a value in the declared variable.
+- **Declaration** - &nbsp; When ask the interpreter to create a new variable and give it to a name.
+- **Definition** - &nbsp; When you assign a value in the declared variable.
 
   ```javascript
   var sayHelloString;                                           // Declaration
