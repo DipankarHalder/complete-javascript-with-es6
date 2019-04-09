@@ -44,23 +44,16 @@ multiply(5);        // Output - 5
 If a method accepts large configuration objects as an argument, your code can become quite large. It’s common to prepare some variables and add them to said object. Property shorthands are syntactic sugar to make this step shorter and more readable.
 
 ```javascript
-// With previous version of JavaScript
-var foo = {             // properties
+// With previous version of JavaScript              // With ES6 JavaScript
+// properties                                       // properties
+var foo = {                                         var foo = {x, y, z};
     x: x,
     y: y,
     z: z,
 };
-var foo = {             // methods
-    a: function() {},
-    b: function() {}
-};
-
-// -- -- -- -- -- -- -- -- -- -- -- -- -- -- 
-
-// With ES6 JavaScript
-var foo = {x, y, z};    // properties
-var foo = {             // methods
-    a() {},
-    b() {}
-};
+// methods                                          // methods
+var foo = {                                         var foo = {
+    a: function() {},                                   a() {},
+    b: function() {}                                    b() {}
+};                                                  };
 ```
