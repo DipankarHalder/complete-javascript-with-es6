@@ -1,8 +1,7 @@
 ## Introduction of ES6
 
 
-
-## 1. "use strict" :
+### 1. "use strict" :
 
 - When it is located at the top of a script, the whole script works the **“modern”** way, like **“classes”** and **“modules”**, enable strict mode automatically.
 
@@ -15,7 +14,7 @@
 &nbsp;
 &nbsp;
 
-## 2. Operator ( = , == , == , \*\* ) :
+### 2. Operator ( = , == , == , \*\* ) :
 
 | Type | Usage |
 | ---- | ------------------- |
@@ -27,7 +26,7 @@
 &nbsp;
 &nbsp;
 
-## 3. Declaration & Definition :
+### 3. Declaration & Definition :
 
 - Declaration - &nbsp; When ask the interpreter to create a new variable and give it to a name.
 - Definition - &nbsp; When you assign a value in the declared variable.
