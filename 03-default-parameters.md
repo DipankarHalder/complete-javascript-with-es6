@@ -2,7 +2,7 @@
 
 ### Default Parameters :
 
-In the old JavaScript version, We can't set default values with parameters in function and without assigning variable if we call the function, got an error ( like - NaN, undefined ).
+In the old JavaScript version, We can't set **default values with parameters** in function and without assigning variable if we call the function, got an error ( like - NaN, undefined ).
 
 ```javascript
 function multiply(a, b) {
@@ -25,7 +25,7 @@ multiply(5, 2);     // Output - 10
 multiply(5);        // Output - 5
 ```
 
-It's a great feature With ES5/ES6 called Default Parameters, where the function body are no longer required. Now, We can assign the default value with parameters in function head. The code mentioned below:
+It's a great feature With **ES5/ES6 called Default Parameters**, where the function body are no longer required. Now, We can **assign the default value with parameters in function head**. The code mentioned below:
 
 ```javascript
 function multiply(a, b = 1) {
@@ -55,6 +55,7 @@ var foo = {             // methods
     b: function() {}
 };
 
+// -- -- -- -- -- -- -- -- -- -- -- -- -- -- 
 
 // With ES6 JavaScript
 var foo = {x, y, z};    // properties
