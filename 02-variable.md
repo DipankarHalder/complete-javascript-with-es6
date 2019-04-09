@@ -80,7 +80,7 @@
 &nbsp;
 &nbsp;
 
-### In short of var, let & const : 
+### In short of Var, Let & Const : 
 var | let | const
 --- | --- | ---
 Global or function scoped | Block scoped | Block scoped
