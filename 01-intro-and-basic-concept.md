@@ -20,12 +20,12 @@
 
 ### 2. Operator ( = , == , == , \*\* ) :
 
-| Type | Usage                                                                                                                                                                |
-| ---- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| ==   | Assignment Operator                                                                                                                                                  |
-| ==   | Comparisons ( **_Formerly Compares Variable_** ).                                                                                                                    |
-| ===  | Strict equality ( **_Checks the equality with type of value_** ).                                                                                                    |
-| \*\* | Exponentiation Operator, It's a recent addition to the language. For **a** natural number **b**, the result of **_a \*\* b_** is a multiplied by itself **b** times. |
+| Type | Usage |
+| ---- | ------------------- |
+| ==   | Assignment Operator |
+| ==   | Comparisons ( **_Formerly Compares Variable_** ) |
+| ===  | Strict equality ( **_Checks the equality with type of value_** ) |
+| \*\* | Exponentiation Operator, It's a recent addition to the language. For **a** natural number **b**, the result of **_a \*\* b_** is a multiplied by itself **b** times |
 
 &nbsp;
 
@@ -39,6 +39,6 @@
 - Definition - &nbsp; When you assign a value in the declared variable.
 
   ```javascript
-  var sayHelloString; // Declaration
-  sayHelloString = "Hello World! This is a string"; // Definition
+  var sayHelloString;                                           // Declaration
+      sayHelloString = "Hello World! This is a string";         // Definition
   ```
