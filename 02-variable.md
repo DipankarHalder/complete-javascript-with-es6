@@ -1,4 +1,4 @@
-## Concept of Var, Let & Const
+## ES6 Concept of Var, Let & Const
 
 
 ### Var :
