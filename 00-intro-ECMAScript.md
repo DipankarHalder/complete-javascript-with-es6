@@ -1,11 +1,11 @@
-## **Contents Introduction to ECMAScript**
+## **Introduction to ECMAScript**
 
 ### **Feature list of :**
 #### **- ES2015**
-* let and const
-* Arrow Functions
+* var, let and const
 * Default parameters
 * Template Literals
+* Arrow Functions
 * Destructuring assignments
 * Enhanced Object Literals
 * For-of loop
