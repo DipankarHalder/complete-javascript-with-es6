@@ -1,4 +1,4 @@
-## **Concept of Functions Literals**
+## **Concept of Arrow Functions**
 
 * Arrow functions – also called **fat arrow** functions.
 * Make our code **more concise** and **simplify function scoping**.
