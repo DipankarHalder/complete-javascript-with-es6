@@ -2,7 +2,7 @@
 
 ### **Feature list of :**
 #### **- ES2015**
-* var, let and const
+* let and const
 * Default parameters
 * Template Literals
 * Arrow Functions
