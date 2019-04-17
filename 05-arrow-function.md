@@ -171,7 +171,7 @@ var cat = {
 ```
 
 &nbsp;
-**- Callback functions with dynamic context**
+**- Callback functions with dynamic context :**
 ```javascript
 // If you need your context to be dynamic, arrow functions are not the right choice. Take a look at this event handler below:
 var button = document.getElementById('press');
