@@ -156,7 +156,8 @@ var obj = {
 
 &nbsp;
 #### 8. When you should not use Arrow Functions
-**1. Constructors :**
+
+**- Constructors :**
 Arrow functions can’t be used as **constructors** as other functions can. Don’t use them to create similar objects as you would with other functions. If you attempt to use **new** with an arrow function, **it will throw an error**. Arrow functions, like **built-in functions**, don’t have a **prototype property or other internal methods**. Because constructors are generally used to create class-like objects in JavaScript, you should use the new ES6 classes instead.
 
 ```javascript
@@ -170,7 +171,7 @@ var cat = {
 ```
 
 &nbsp;
-**2. Callback functions with dynamic context**
+**- Callback functions with dynamic context**
 ```javascript
 // If you need your context to be dynamic, arrow functions are not the right choice. Take a look at this event handler below:
 var button = document.getElementById('press');
@@ -181,7 +182,7 @@ button.addEventListener('click', () => {
 ```
 
 &nbsp;
-**3. Generators :**
+**- Generators :**
 Arrow functions are designed to be lightweight and can’t be used as generators. Using the ***yield** keyword in ES6 will throw an error. Use ES6 generators instead.
 
 
