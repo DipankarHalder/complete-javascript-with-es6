@@ -8,7 +8,7 @@
 * By using arrow functions, we avoid having to type the **function** keyword, **return** keyword and **curly brackets**.
 
 &nbsp;
-#### 1. Basic Syntax with One Parameter - 
+#### 1. One Parameter - 
 * Parentheses are optional when only one parameter is present
 * Curly brackets aren’t required if only one expression is present
 * return keyword is not required
@@ -24,7 +24,7 @@ const singleES6 = x =>  x;
 ```
 
 &nbsp;
-#### 2. Basic Syntax with Multiple Parameters -
+#### 2. Multiple Parameters -
 * Curly brackets are required, if present more than one expression
 * return keyword is not required
 
