@@ -1,7 +1,7 @@
-## ES6 Concept of Var, Let & Const
+## **Concept of Var, Let & Const**
 
 
-### Var :
+### **1. Var :**
 * Declarations are **global scoped** or **functionally scoped**.
 * It can be **redeclared** and **updated**.
 * Can be declared without being initialized
@@ -30,7 +30,7 @@
 &nbsp;
 &nbsp;
 
-### Let :
+### **2. Let :**
 * Declarations are **block scoped** ( only available for **use within curly braces { } block** ).
 * It can be **updated** or **reinitialized**, but **not redeclared**.
 
@@ -56,7 +56,7 @@
 &nbsp;
 &nbsp;
 
-### Const :
+### **3. Const :**
 * Declarations are **block scoped**.
 * It cannot **updated** or **reinitialized** and **not redeclared**.
 * Note - This behavior is somehow different when it comes to objects declared with const. While a **const object cannot be updated, But the properties of this objects can be updated**.
@@ -80,7 +80,7 @@
 &nbsp;
 &nbsp;
 
-### In short of Var, Let & Const : 
+### **# In short of Var, Let & Const :**
 var | let | const
 --- | --- | ---
 Global or function scoped | Block scoped | Block scoped

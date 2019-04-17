@@ -1,6 +1,6 @@
-## ES6 Default Parameters & Property Shorthands
+## **Default Parameters & Property Shorthands**
 
-### Default Parameters :
+### **1. Default Parameters :**
 
 In the old JavaScript version, We can't set **default values with parameters** in function and without assigning variable if we call the function, got an error ( like - NaN, undefined ).
 
@@ -39,7 +39,7 @@ multiply(5);        // Output - 5
 &nbsp;
 &nbsp;
 
-### Property Shorthands :
+### **2. Property Shorthands :**
 
 If a method accepts large configuration objects as an argument, your code can become quite large. It’s common to prepare some variables and add them to said object. Property shorthands are syntactic sugar to make this step shorter and more readable.
 

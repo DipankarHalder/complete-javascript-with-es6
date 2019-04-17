@@ -1,6 +1,6 @@
-## ES6 Template Literals & Tag Functions
+## **Template Literals & Tag Functions**
 
-## **1. &nbsp; Template Literal** 
+### **1. Template Literal :** 
 _**A template literal is a way to concatenate strings while allowing embedded expressions and improving readability.**_
 
 We normally use single ( ‘ ) or double ( “ ) quotes for writing string in JavaScript. Like :
@@ -40,11 +40,10 @@ function personTemplate({name, hobbies, job}){
           </article>`;
 }
 ```
-
-
+&nbsp;
 &nbsp;
 
-## **2. &nbsp; Tag Functions**
+## **2. Tag Functions :**
 _**A tagged template is a function call that uses a template literal from which to get its arguments.**_
 
 It's super confusing, check the example -
