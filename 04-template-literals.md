@@ -6,33 +6,41 @@ _**A template literal is a way to concatenate strings while allowing embedded ex
 We normally use single ( ‘ ) or double ( “ ) quotes for writing string in JavaScript. Like :
 
 ``` javascript
-let string_1 = 'Hello String One';
-let strring_2 = "Hello String Two";
+// Example - veriable
+let string_1 = 'Hello String One';    //single quote
+let string_2 = "Hello String Two";    //double quote.
+
+// Example - HTML templates
+function personTemplate(person){
+  return "<article class='person'>" +
+            "<h3>" + person.name + "</h3>" +   
+            "<p> Hobbies: " + person.hobbies +  "</p>" +
+            "<p> Current job: " + person.job + "</p>" +                         
+          "</article>";
+}
 ```
 
 But with _**ES6 template literals**_, we use enclosing back-ticks ( ` ) instead. 
 
 ``` javascript
-const str3 = `Hello World`;
+// Example - veriable
+const string_3 = `Hello World`;
+
+// Example - HTML templates
+function personTemplate({name, hobbies, job}){
+   return `<article class="person">
+            <h3>${name}</h3>
+            <div>
+                <div>Hobbies:</div>
+                <ul>
+                    ${hobbies.map(hobby => `<li>${hobby}</li>`).join(" ")}
+                </ul>
+            </div>
+            <p>Current job: ${job}</p>
+          </article>`;
+}
 ```
-Few Code:
 
-``` javascript
-// String Concatenation
-var person = {
-    name: 'Alfred',
-    nn: 'Alfy',
-};
-
-console.log('Hi, I\'m ' + p.name + '! Call me "' + p.nn + '".');    // previous version
-console.log(`Hi, I'm ${p.name}! Call me "${p.nn}".`);               // with ES6 Template Literal
-// Output - Hi, I'm Alfred! Call me "Alfy".
-
-// Calculations
-console.log('Three plus six is ' + (3 + 6) + '.');                  // previous version
-console.log(`Three plus six is ${3 + 6}.`);                         // with ES6 Template Literal
-// Output - Three plus six is 9.
-```
 
 &nbsp;
 
