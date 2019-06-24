@@ -21,8 +21,8 @@
 
 &nbsp;
 #### **- ES2016**
-* [Map](https://github.com/DipankarHalder/complete-javascript-with-es6/blob/master/07-map.md)
-* [Filter](https://github.com/DipankarHalder/complete-javascript-with-es6/blob/master/08-filter.md)
+* [map()](https://github.com/DipankarHalder/complete-javascript-with-es6/blob/master/07-map.md)
+* [filter()](https://github.com/DipankarHalder/complete-javascript-with-es6/blob/master/08-filter.md)
 * Array.prototype.includes()
 * Exponentiation Operator
 
