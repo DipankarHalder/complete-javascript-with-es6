@@ -2,13 +2,14 @@
 
 ### **Feature list of :**
 #### **- ES2015**
+* For-of loop
+* [Array Literals](https://github.com/DipankarHalder/complete-javascript-with-es6/blob/master/06-array.md)
+* Object Literals
 * [let and const](https://github.com/DipankarHalder/complete-javascript-with-es6/blob/master/02-variable.md)
 * [Default parameters](https://github.com/DipankarHalder/complete-javascript-with-es6/blob/master/03-default-parameters.md)
 * [Template Literals](https://github.com/DipankarHalder/complete-javascript-with-es6/blob/master/04-template-literals.md)
 * [Arrow Functions](https://github.com/DipankarHalder/complete-javascript-with-es6/blob/master/05-arrow-function.md)
 * Destructuring assignments
-* Enhanced Object Literals
-* For-of loop
 * Classes
 * Promises
 * Modules
@@ -16,11 +17,12 @@
 * New Object methods
 * The spread operator
 * Set
-* Map
 * Generators
 
 &nbsp;
 #### **- ES2016**
+* [Map](https://github.com/DipankarHalder/complete-javascript-with-es6/blob/master/07-map.md)
+* [Filter](https://github.com/DipankarHalder/complete-javascript-with-es6/blob/master/08-filter.md)
 * Array.prototype.includes()
 * Exponentiation Operator
 
